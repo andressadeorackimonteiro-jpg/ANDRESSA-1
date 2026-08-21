@@ -1,77 +1,649 @@
+# Blog de Leitura — versão mais natural
 
-        }
-    </style>
+## Estrutura
+
+```text
+blog-leitura/
+│
+├── index.html
+├── style.css
+└── img/
+    └── livros.jpg
+```
+
+### `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Entre Páginas | 5 Hábitos de Leitura</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <img src="livros.jpg" alt="Livros sobre uma mesa">
+    <header class="topo">
 
-        <h1>5 Hábitos que Vão Fazer Você Ler Mais</h1>
-        <p>Ler é aprender, descobrir e crescer.</p>
+        <div class="logo">
+            Entre <span>Páginas</span>
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#habitos">Hábitos</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
     </header>
 
-    <main>
 
-        <section>
-            <h2>A Importância de Ler</h2>
-            <p>
-                A leitura faz parte do nosso dia a dia e pode ajudar muito
-                no aprendizado. Além de melhorar a escrita e aumentar o
-                conhecimento, ler também pode ser uma forma de relaxar
-                e conhecer novas histórias.
-            </p>
+    <main id="inicio">
+
+        <section class="hero">
+
+            <div class="hero-texto">
+
+                <p class="categoria">LEITURA • DESENVOLVIMENTO</p>
+
+                <h1>
+                    5 hábitos de leitura
+                    para transformar seu dia
+                </h1>
+
+                <p class="descricao">
+                    Ler não precisa ser uma obrigação. Descubra pequenas
+                    mudanças que podem fazer você aproveitar mais os livros
+                    e criar uma rotina de leitura prazerosa.
+                </p>
+
+                <a class="botao" href="#habitos">
+                    Começar a ler
+                </a>
+
+            </div>
+
+            <div class="hero-imagem">
+                <img src="img/livros.jpg" alt="Livros sobre uma mesa">
+            </div>
+
         </section>
 
-        <section>
-            <h2>1. Separe um horário para ler</h2>
+
+        <section class="introducao">
+
+            <div>
+                <p class="numero">01</p>
+                <h2>Um pouco de leitura todos os dias</h2>
+            </div>
+
             <p>
-                Escolha um momento do dia para ler, mesmo que seja por
-                poucos minutos. Com o tempo, a leitura pode virar um hábito.
+                Não é necessário passar horas lendo. Alguns minutos por dia
+                já podem fazer diferença. O segredo é transformar a leitura
+                em uma parte natural da sua rotina.
             </p>
+
         </section>
 
-        <section>
-            <h2>2. Escolha livros que você goste</h2>
-            <p>
-                Não precisa começar por um livro difícil. Escolha uma
-                história que realmente desperte sua curiosidade. Assim,
-                fica muito mais fácil continuar lendo.
-            </p>
+
+        <section id="habitos" class="habitos">
+
+            <div class="titulo-secao">
+                <p>PARA COMEÇAR</p>
+                <h2>5 hábitos simples</h2>
+            </div>
+
+
+            <article class="habito">
+
+                <div class="numero-habito">01</div>
+
+                <div>
+                    <h3>Leia um pouco todos os dias</h3>
+
+                    <p>
+                        Separe entre 10 e 20 minutos para ler. Escolha um
+                        horário que seja fácil manter, como antes de dormir
+                        ou depois do café da manhã.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <article class="habito">
+
+                <div class="numero-habito">02</div>
+
+                <div>
+                    <h3>Escolha livros que realmente interessam</h3>
+
+                    <p>
+                        Não leia apenas porque determinado livro está na moda.
+                        Histórias e assuntos que despertam sua curiosidade
+                        tornam o hábito muito mais agradável.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <article class="habito">
+
+                <div class="numero-habito">03</div>
+
+                <div>
+                    <h3>Tenha um lugar tranquilo</h3>
+
+                    <p>
+                        Um canto confortável, uma boa iluminação e alguns
+                        minutos longe das notificações ajudam a manter
+                        a concentração.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <article class="habito">
+
+                <div class="numero-habito">04</div>
+
+                <div>
+                    <h3>Faça pequenas anotações</h3>
+
+                    <p>
+                        Marque uma frase interessante ou escreva uma ideia
+                        que surgiu durante a leitura. Isso ajuda a lembrar
+                        melhor do que foi lido.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <article class="habito">
+
+                <div class="numero-habito">05</div>
+
+                <div>
+                    <h3>Não tenha pressa para terminar</h3>
+
+                    <p>
+                        Ler não é uma competição. Mais importante do que
+                        quantidade é aproveitar a experiência e entender
+                        aquilo que o livro tem para oferecer.
+                    </p>
+                </div>
+
+            </article>
+
         </section>
 
-        <section>
-            <h2>3. Evite distrações</h2>
+
+        <section class="frase">
+
             <p>
-                Na hora de ler, tente deixar o celular e outras distrações
-                um pouco de lado. Assim você consegue prestar mais atenção
-                na história.
+                “Um livro é uma porta para outros lugares,
+                outras histórias e novas ideias.”
             </p>
+
         </section>
 
-        <section>
-            <h2>4. Comece com poucas páginas</h2>
-            <p>
-                Não é preciso ler muitas páginas de uma vez. Começar com
-                5 ou 10 páginas por dia já é um bom começo.
-            </p>
-        </section>
 
-        <section>
-            <h2>5. Tenha uma meta de leitura</h2>
+        <section id="sobre" class="sobre">
+
+            <div>
+                <p class="categoria">PARA TERMINAR</p>
+
+                <h2>
+                    Comece com apenas algumas páginas.
+                </h2>
+            </div>
+
             <p>
-                Criar uma pequena meta pode ajudar a manter o ritmo.
-                Você pode escolher ler um pouco todos os dias ou terminar
-                um livro por mês.
+                Criar o hábito de leitura acontece aos poucos. Escolha um
+                livro que desperte sua curiosidade, encontre alguns minutos
+                do seu dia e simplesmente comece.
             </p>
+
         </section>
 
     </main>
 
+
     <footer>
-        <p>Leia mais, descubra mais! 📚</p>
+
+        <div class="logo">
+            Entre <span>Páginas</span>
+        </div>
+
+        <p>
+            Um espaço para quem gosta de descobrir novas histórias.
+        </p>
+
+        <small>© 2026 Entre Páginas</small>
+
     </footer>
 
 </body>
 </html>
+```
+
+### `style.css`
+
+```css
+:root {
+    --marrom: #49352a;
+    --marrom-claro: #765a47;
+    --creme: #f5efe6;
+    --bege: #e7d7c3;
+    --verde: #69735a;
+    --branco: #fffdf9;
+    --texto: #332b26;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--creme);
+    color: var(--texto);
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7;
+}
+
+
+/* TOPO */
+
+.topo {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    padding: 25px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 27px;
+    font-weight: 600;
+    color: var(--marrom);
+}
+
+.logo span {
+    color: var(--verde);
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: var(--marrom);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--verde);
+}
+
+
+/* CONTEÚDO */
+
+main {
+    max-width: 1180px;
+    margin: auto;
+    padding: 20px 30px 80px;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 570px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    align-items: center;
+}
+
+.hero-texto {
+    padding-left: 20px;
+}
+
+.categoria {
+    color: var(--verde);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    color: var(--marrom);
+    font-size: clamp(45px, 5vw, 70px);
+    line-height: 1.05;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.descricao {
+    max-width: 520px;
+    color: #675b53;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+
+    background: var(--marrom);
+    color: white;
+
+    padding: 13px 27px;
+
+    text-decoration: none;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: var(--verde);
+    transform: translateY(-2px);
+}
+
+
+/* IMAGEM */
+
+.hero-imagem {
+    height: 520px;
+    overflow: hidden;
+}
+
+.hero-imagem img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    filter: saturate(0.85);
+}
+
+
+/* INTRODUÇÃO */
+
+.introducao {
+    background: var(--branco);
+
+    padding: 55px 65px;
+    margin: 50px 0 100px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
+    border-left: 5px solid var(--verde);
+}
+
+.numero {
+    color: var(--verde);
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.introducao h2,
+.sobre h2 {
+    font-family: "Playfair Display", serif;
+    color: var(--marrom);
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+
+/* HÁBITOS */
+
+.titulo-secao {
+    margin-bottom: 45px;
+}
+
+.titulo-secao p {
+    color: var(--verde);
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.titulo-secao h2 {
+    font-family: "Playfair Display", serif;
+    color: var(--marrom);
+    font-size: 48px;
+    font-weight: 600;
+}
+
+
+/* CADA HÁBITO */
+
+.habito {
+    background: var(--branco);
+
+    display: grid;
+    grid-template-columns: 100px 1fr;
+
+    gap: 30px;
+
+    padding: 35px 40px;
+
+    margin-bottom: 15px;
+
+    transition: 0.3s;
+}
+
+.habito:hover {
+    transform: translateX(7px);
+    box-shadow: 0 10px 30px rgba(73, 53, 42, 0.08);
+}
+
+.numero-habito {
+    font-family: "Playfair Display", serif;
+    color: var(--bege);
+
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.habito h3 {
+    font-family: "Playfair Display", serif;
+    color: var(--marrom);
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+.habito p {
+    color: #71655c;
+    font-size: 15px;
+    max-width: 700px;
+}
+
+
+/* FRASE */
+
+.frase {
+    margin: 100px 0;
+
+    background: var(--verde);
+    color: white;
+
+    padding: 70px 80px;
+
+    text-align: center;
+}
+
+.frase p {
+    max-width: 800px;
+    margin: auto;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+
+/* SOBRE */
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    padding: 40px 0;
+}
+
+.sobre h2 {
+    margin-top: 10px;
+}
+
+.sobre > p {
+    color: #675b53;
+    align-self: center;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background: var(--marrom);
+    color: #eee3d7;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+footer .logo {
+    color: white;
+    margin-bottom: 8px;
+}
+
+footer .logo span {
+    color: #b8c0a8;
+}
+
+footer p {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+footer small {
+    color: #b9aaa0;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+    .topo {
+        padding: 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        padding: 10px 20px 60px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-top: 30px;
+    }
+
+    .hero-texto {
+        padding-left: 0;
+    }
+
+    .hero-imagem {
+        height: 400px;
+    }
+
+    .introducao,
+    .sobre {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .introducao {
+        padding: 35px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 38px;
+    }
+
+    .habito {
+        grid-template-columns: 60px 1fr;
+        padding: 25px;
+        gap: 15px;
+    }
+
+    .numero-habito {
+        font-size: 38px;
+    }
+
+    .frase {
+        padding: 50px 25px;
+    }
+
+    .frase p {
+        font-size: 25px;
+    }
+}
+```
+
+### Imagem
+
+Coloque uma foto **real de livros** dentro da pasta `img` e dê a ela exatamente este nome:
+
+```text
+livros.jpg
+```
+
+O site já está preparado para carregar essa imagem automaticamente.
+
+**Dica:** escolha uma foto com livros sobre uma mesa, estante, café ou perto de uma janela. Isso combina melhor com a estética do blog do que imagens muito artificiais ou ilustrações.
